@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    max-width: 900;
+    margine: auto;
+    padding: 20px;
+    background-color: #f4f6f8;
+
+}
+body {
+    background-color: #f0f8ff; /* light blue */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Images */
+img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+a:hover {
+    color: #ff6600;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    color: gray;
+    font-size: 14px;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px;
+}
+
+nav a {
+    color: rgb(158, 117, 117);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+#formFeedback {
+    color: rgb(238, 33, 33) !important;
+    text-decoration: none !important;
+    cursor: default;
+}
+
+nav {
+    background-color: #222;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+section img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+section h1, section h2, section p {
+    text-align: center;
+}
+
+section img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: orange;
+    transition: color 0.3s ease;
+}
+
+button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white; /* optional, if text needs contrast */
+    font-family: Arial, sans-serif;
+}
+
+.floating {
+    position: absolute;
+    width: 50px;
+    animation: float 6s ease-in-out infinite;
+    opacity: 0.7;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+body {
+    background-image: url('bg-tech.jpg');
+    background-size: cover;       /* cover whole page */
+    background-repeat: no-repeat; /* don’t repeat */
+    background-attachment: fixed; /* stays while scrolling */
+    color: white;                 /* text color for contrast */
+    font-family: Arial, sans-serif;
+}
