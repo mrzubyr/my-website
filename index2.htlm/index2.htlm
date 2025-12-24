@@ -1,0 +1,11 @@
+<!DOCTYPE htlm>
+<htlm>
+<head>
+    <title>My first Page</title>
+</head>
+
+<body>
+    <h1>Hello Mr-zubyr</h1>
+    <p>This ias my first HTLM page</p>
+</body>
+</htlm>

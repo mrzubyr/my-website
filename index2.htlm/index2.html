@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zubairu Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: url('blockchain-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0,0,0,0.7);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f39c12; /* orange hover effect */
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            color: #00f0ff;
+            text-shadow: 0 0 10px #00f0ff;
+        }
+
+        .skills, .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 50px 20px;
+        }
+
+        .card {
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px #f39c12;
+        }
+
+        .floating {
+            position: absolute;
+            width: 60px;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        footer {
+            background-color: rgba(0,0,0,0.7);
+            padding: 10px;
+            text-align: center;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Mr-Zubyr Innovative Sigital Services</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to My Tech Portfolio</h1>
+        <p>Learning Web Development, Blockchain & Crypto</p>
+    </section>
+
+    <section class="skills">
+        <div class="card">HTML & CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Crypto & Blockchain</div>
+        <div class="card">Web Design</div>
+    </section>
+
+    <section class="projects">
+        <div class="card">Portfolio Website</div>
+        <div class="card">Mini Trading App</div>
+        <div class="card">Crypto Blog</div>
+    </section>
+
+    <!-- Floating Bitcoin icons -->
+    <img src="images2/bbbtc.png" class="floating" style="top:40px; left:10px;">
+    <img src="images2/btccc.png" class="floating" style="top:100px; right:10px;">
+    <img src="images2/bbtc.png" class="floating" style="bottom:100px; left:10px;">
+    <img src="images2/btc.png" class="floating" style="bottom:100px; left:10px;">
+    <img src="images2/btcb.png" class="floating" style="bottom:100px; left:10px;">
+    <img src="images2/btcccc.png" class="floating" style="top:50px; right:10px;">
+
+    <footer>
+        © 2025 Zubairu Portfolio
+    </footer>
+
+</body>
+</html>
