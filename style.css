@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>My Skills</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="skills">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">Blockchain Basics</div>
+</section>
+
+<footer>
+    © 2025 Zubairu Portfolio
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Contact Me</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Get in Touch</h1>
+    <p>Email: example@email.com</p>
+    <p>Phone: +234 XXXXXXXX</p>
+</section>
+
+<footer>
+    © 2025 Zubairu Portfolio
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+</nav>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background: #0f172a; /* dark tech blue */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+header h2 {
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+/* NAVIGATION */
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #38bdf8;
+    text-shadow: 0 0 10px #38bdf8;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #cbd5f5;
+}
+
+/* SKILLS & PROJECTS */
+.skills, .projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* FLOATING ICONS */
+.floating {
+    position: absolute;
+    width: 60px;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.8);
+    color: #94a3b8;
+    margin-top: 50px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .skills, .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .floating {
+        display: none; /* hide floating icons on mobile */
+    }
+}
+
+nav a.active {
+    color: #f39c12; /* or any color you like */
+    border-bottom: 2px solid #f39c12;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #f39c12; /* glowing effect */
+    cursor: pointer; /* shows it’s clickable */
+}
+
+@media (max-width: 768px) {
+    .skills, .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Add a class for active page */
+nav a.active {
+    color: #f39c12; /* Orange color for the current page */
+    border-bottom: 2px solid #f39c12; /* Optional underline */
+}
+
+.about-me {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.about-me .profile-pic {
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: rgba(0,0,0,0.7);
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+.contact input:focus, .contact textarea:focus {
+    outline: 2px solid #f39c12; /* highlight color on focus */
+}
+
+.contact button {
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00f0ff;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.contact button:hover {
+    background-color: #f39c12;
+    transform: translateY(-2px);
+}
+
+#formFeedback {
+    margin-top: 15px;
+    font-weight: bold;
+    color: red; /* default color for error messages */
+}
+
+nav a.active {
+  color: #f39c12;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 4px;
+}
+
+.card a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #f39c12;
+}
